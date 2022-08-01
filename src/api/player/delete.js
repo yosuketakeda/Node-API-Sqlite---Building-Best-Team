@@ -14,12 +14,16 @@ export default async (req, res) => {
   if (player) {   
     // inspecting token  
     let token = req.headers.authorization;  
+    
+    /* 
+    
     if(token !== 'Bearer SkFabTZibXE1aE14ckpQUUxHc2dnQ2RzdlFRTTM2NFE2cGI4d3RQNjZmdEFITmdBQkE=') {    
       return res.status(403).send({
         message: 'No token provided! The selected player was protected with token.'
       });
     }
     
+    */
     await player.destroy();
   } else {
     return res.status(404).send({ message: `Invalid value for player id : ${playerID}` });
