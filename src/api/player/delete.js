@@ -17,7 +17,7 @@ export default async (req, res) => {
     
     /* 
     
-    if(token !== 'Bearer SkFabTZibXE1aE14ckpQUUxHc2dnQ2RzdlFRTTM2NFE2cGI4d3RQNjZmdEFITmdBQkE=') {    
+    if(token !== 'xxxx') {    
       return res.status(403).send({
         message: 'No token provided! The selected player was protected with token.'
       });
